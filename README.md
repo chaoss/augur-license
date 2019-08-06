@@ -83,18 +83,21 @@ Installation
 release](https://github.com/ttgurney/dosocs2/releases) and use `pip` to install
 it as a package. Replace `0.x.x` with the latest release version number.
 
-I recommend doing this inside a Python
+We recommend doing this inside a Python
 [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/), but it
-is not a requirement. If you are not inside a virtualenv you may have to run
-`pip` as root (not recommended!).
+is not a requirement.
 
+This installation can be achieved through the Makefile in the augur-sbom directory.
 
-    $ tar xf 0.x.x.tar.gz
-    $ pip install ./DoSOCSv2-0.x.x
+    $ sudo make install
 
-Then run the install script for the default license scanner:
+If you have any problems installing Nomos, run the install script:
 
     $ ./DoSOCSv2-0.x.x/scripts/install-nomos.sh
+    
+The Makefile may also be used to create a configuration file and initialize the database:
+
+    $ sudo make create
 
 ### Step 2 (Optional) - Change the default configuration
 

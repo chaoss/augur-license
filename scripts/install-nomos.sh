@@ -28,6 +28,8 @@ fi
 REPO=$(mktemp -d)
 echo "[$0] git clone https://github.com/fossology/fossology $REPO"
 git clone https://github.com/fossology/fossology $REPO || exit 1
+sed -i -e 's/-lfossology //g' $REPO/Makefile.conf
+sed -i -e 's/-lfossologyCPP //g' $REPO/Makefile.conf
 pushd $REPO/src/nomos/agent
 yes | mv Makefile.sa Makefile || exit 1
 echo "[$0] make"

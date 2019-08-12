@@ -11,7 +11,7 @@ import os
 def scan(repo_name):
     connection = psycopg2.connect(
         user = "augur",
-        password = "mcguire18",
+        password = "****",
         database = "augur",
         host = "localhost",
         port = 5433,

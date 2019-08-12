@@ -9,7 +9,7 @@ connection_uri = "postgresql://augur:mcguire18@localhost:5433/augur_dev"
 
 connection = psycopg2.connect(
     user = "augur",
-    password = "mcguire18",
+    password = "****",
     database = "augur_dev",
     host = "localhost",
     port = 5433,
@@ -45,5 +45,3 @@ for sector in r:
 cur.execute("UPDATE spdx.augur_repo_map a SET dosocs_pkg_name = b.name FROM spdx.packages b WHERE a.repo_path = b.download_location;")
 connection.commit()
 connection.close()
-
-

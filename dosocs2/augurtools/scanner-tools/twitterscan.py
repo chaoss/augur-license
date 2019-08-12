@@ -5,7 +5,7 @@ import psycopg2
 from urllib.parse import urlparse
 from subprocess import PIPE
 
-connection_uri = "postgresql://augur:mcguire18@localhost:5433/augur_dev"
+connection_uri = "postgresql://augur:****@localhost:5433/augur_dev"
 
 connection = psycopg2.connect(
     user = "augur",

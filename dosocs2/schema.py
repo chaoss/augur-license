@@ -22,7 +22,17 @@ from sqlalchemy import Integer, String, Text, Boolean, DateTime
 from sqlalchemy import ForeignKeyConstraint, CheckConstraint, UniqueConstraint
 from sqlalchemy import func
 
+from . import configtools
+
 meta = MetaData()
+
+augur_repo_map = Table('augur_repo_map', meta,
+    Column('map_id', Integer, primary_key=True),
+    Column('dosocs_pkg_id', Integer),
+    Column('dosocs_pkg_name', Text),
+    Column('repo_id', Integer),
+    Column('repo_path', Text)
+    )
 
 licenses = Table('licenses', meta,
     Column('license_id', Integer, primary_key=True),
@@ -275,9 +285,16 @@ files_scans = Table('files_scans', meta,
     )
 
 
-def create_connection(connection_string, echo):
-    # because 'echo=False' is for some reason not allowed...
-    if echo is True:
-        return create_engine(connection_string, echo=True)
+def create_connection(connection_string, echo, dbschema, dbtype):
+    # because 'echo=False' is for some reason not allowed
+    print("DB TYPE: " + str(dbtype))
+    if dbtype == 'spdx':
+        if echo is True:
+            return create_engine(connection_string, connect_args={'options': '-csearch_path={}'.format(dbschema)}, echo = True)
+        else:
+            return create_engine(connection_string, connect_args={'options': '-csearch_path={}'.format(dbschema)})
     else:
-        return create_engine(connection_string)
+        if echo is True:
+            return create_engine(connection_string, echo=True)
+        else:
+            return create_engine(connection_string)

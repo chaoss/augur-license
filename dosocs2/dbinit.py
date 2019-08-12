@@ -78,12 +78,11 @@ def initialize(engine, schema, dosocs2_version):
     msg('dropping and creating all tables...', end='')
     schema.meta.drop_all(engine)
     schema.meta.create_all(engine)
-    #self.session = sessionmaker(bind=engine)()
     print('ok.')
     with engine.begin() as conn:
         msg('loading fixtures...')
         for fixture in discover_fixtures():
-            msg('  {}...'.format(os.path.basename(fixture)), end='') 
+            msg('  {}...'.format(os.path.basename(fixture)), end='')
             load_fixture(conn, schema, fixture)
             print('ok.')
         msg('loading default creator...', end='')

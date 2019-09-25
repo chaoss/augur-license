@@ -228,7 +228,7 @@ def main(sysargv=None):
 
     # Set up connection
     echo = util.bool_from_str(config.config['echo'])
-    engine = db.create_connection(config.config['connection_uri'], echo)
+    engine = db.create_connection(config.config['connection_uri'], echo, config.config['schema'], config.config['dbtype'])
 
     # Now run the indicated command
 
@@ -349,7 +349,7 @@ def main(sysargv=None):
             sys.stderr.write(fmt.format(package_path, doc_id))
         with engine.begin() as conn:
             print(render.render_document(conn, doc_id, template_file))
-    
+
     return 0
 
 

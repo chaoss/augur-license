@@ -113,7 +113,7 @@ def register_package(conn, package_root, name=None, version=None, comment=None,
         'version': version or '',
         'supplier_id': None,
         'originator_id': None,
-        'download_location': None,
+        'download_location': os.path.abspath(package_file_path or package_root),
         'verification_code': ver_code,
         'ver_code_excluded_file_id': None,
         'sha256': sha256, # None is permitted here
@@ -146,6 +146,7 @@ def register_package(conn, package_root, name=None, version=None, comment=None,
             }
         row_params.append(package_file_params)
     bulk_insert(conn, db.packages_files, row_params)
+    conn.execute("UPDATE augur_repo_map SET dosocs_pkg_id = " + str(package['package_id']) + "WHERE repo_path = " + chr(39) + str(os.path.abspath(package_file_path or package_root)) + chr(39) + ";")
     return package
 
 

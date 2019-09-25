@@ -26,7 +26,13 @@ DEFAULT_CONFIG = """\
 # connection_uri = sqlite:////path/to/database.sqlite3
 # or
 # connection_uri = postgresql://user:pass@host:port/database
+
+# Example uri
 connection_uri = sqlite:////$(HOME)/.config/dosocs2/dosocs2.sqlite3
+
+# Schema to be used with postgresql
+
+schema = spdx
 
 # comma-separated list of scanners to run when none is explicitly
 # specified. For 'dosocs2 scan' and 'dosocs2 oneshot'
@@ -61,6 +67,8 @@ class Config:
         self.config_home = os.path.join(XDG_CONFIG_HOME, 'dosocs2')
         self.file_location = os.path.join(self.config_home, 'dosocs2.conf')
         self.config = self.get_from_file(DEFAULT_CONFIG.split('\n'))
+        self.config['dbtype'] = self.config['connection_uri'].split(":")[0]
+        print(self.config['dbtype'])
 
     def _interpolate(self, matchobj):
         return os.environ.get(matchobj.group(1)) or ''

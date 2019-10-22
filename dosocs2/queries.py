@@ -139,7 +139,7 @@ def documents_files(docid, package_id):
               (doc.c.document_namespace_id == ide.c.document_namespace_id)
               )
         .join(lic, pfi.c.concluded_license_id == lic.c.license_id, isouter=True)
-        .join(pro, fil.c.project_id == pro.c.project_id, isouter=True)
+        .join(pro, fil.c.package_id == pro.c.package_id, isouter=True)
         )
     .where(
         and_(

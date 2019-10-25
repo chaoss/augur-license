@@ -287,14 +287,8 @@ files_scans = Table('files_scans', meta,
 
 def create_connection(connection_string, echo, dbschema, dbtype):
     # because 'echo=False' is for some reason not allowed
-    print("DB TYPE: " + str(dbtype))
-    if dbtype == 'spdx':
-        if echo is True:
-            return create_engine(connection_string, connect_args={'options': '-csearch_path={}'.format(dbschema)}, echo = True)
-        else:
-            return create_engine(connection_string, connect_args={'options': '-csearch_path={}'.format(dbschema)})
+    dbschema = 'spdx'
+    if echo is True:
+        return create_engine(connection_string, connect_args={'options': '-csearch_path={}'.format(dbschema)}, echo = True)
     else:
-        if echo is True:
-            return create_engine(connection_string, echo=True)
-        else:
-            return create_engine(connection_string)
+        return create_engine(connection_string, connect_args={'options': '-csearch_path={}'.format(dbschema)})

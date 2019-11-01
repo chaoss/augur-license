@@ -23,12 +23,8 @@ import re
 DEFAULT_CONFIG = """\
 # dosocs2 configuration file
 
-# connection_uri = sqlite:////path/to/database.sqlite3
-# or
-connection_uri = postgresql://augur:mcguire18@nekocase.augurlabs.io:5433/snell
-
 # Example uri
-#connection_uri = sqlite:////$(HOME)/.config/dosocs2/dosocs2.sqlite3
+ connection_uri = sqlite:////$(HOME)/.config/dosocs2/dosocs2.sqlite3
 
 # Schema to be used with postgresql
 

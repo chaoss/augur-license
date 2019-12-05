@@ -51,7 +51,7 @@ file_types = Table('file_types', meta,
     )
 
 projects = Table('projects', meta,
-    Column('project_id', Integer, primary_key=True),
+    Column('package_id', Integer, primary_key=True),
     Column('name', Text, nullable=False),
     Column('homepage', Text, nullable=False),
     Column('uri', Text, nullable=False)
@@ -62,11 +62,10 @@ files = Table('files', meta,
     Column('file_type_id', Integer, nullable=False),
     Column('sha256', String(64), nullable=False),
     Column('copyright_text', Text),
-    Column('project_id', Integer),
+    Column('package_id', Integer),
     Column('comment', Text, nullable=False),
     Column('notice', Text, nullable=False),
     UniqueConstraint('sha256', name='uc_file_sha256'),
-    ForeignKeyConstraint(['project_id'], ['projects.project_id']),
     ForeignKeyConstraint(['file_type_id'], ['file_types.file_type_id'])
     )
 

@@ -54,7 +54,7 @@ def lookup_by_sha256(conn, table, sha256):
         return dict(**result)
 
 
-def register_file(conn, path, known_sha256=None):
+def register_file(conn, path, packageid, known_sha256=None):
     sha256 = known_sha256 or util.sha256(path)
     file = lookup_by_sha256(conn, db.files, sha256)
     if file is not None:
@@ -68,7 +68,7 @@ def register_file(conn, path, known_sha256=None):
         'sha256': sha256,
         'file_type_id': file_type_id,
         'copyright_text': None,
-        'project_id': None,
+        'package_id': packageid,
         'comment': '',
         'notice': ''
         }
@@ -136,7 +136,7 @@ def register_package(conn, package_root, name=None, version=None, comment=None,
     # Create packages_files rows
     row_params = []
     for (file_path, file_sha256) in hashes.items():
-        fileobj = register_file(conn, file_path, known_sha256=file_sha256)
+        fileobj = register_file(conn, file_path,  package['package_id'], known_sha256=file_sha256)
         package_file_params = {
             'package_id': package['package_id'],
             'file_id': fileobj['file_id'],
@@ -146,7 +146,7 @@ def register_package(conn, package_root, name=None, version=None, comment=None,
             }
         row_params.append(package_file_params)
     bulk_insert(conn, db.packages_files, row_params)
-    conn.execute("UPDATE augur_repo_map SET dosocs_pkg_id = " + str(package['package_id']) + "WHERE repo_path = " + chr(39) + str(os.path.abspath(package_file_path or package_root)) + chr(39) + ";")
+    conn.execute("UPDATE augur_repo_map SET dosocs_pkg_id = " + str(package['package_id']) + " WHERE repo_path = " + chr(39) + str(os.path.abspath(package_file_path or package_root)) + chr(39) + ";")
     return package
 
 

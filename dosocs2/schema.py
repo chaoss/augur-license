@@ -286,6 +286,7 @@ files_scans = Table('files_scans', meta,
 
 def create_connection(connection_string, echo, dbschema, dbtype):
     # because 'echo=False' is for some reason not allowed
+    dbschema = 'spdx'
     if echo is True:
         return create_engine(connection_string, connect_args={'options': '-csearch_path={}'.format(dbschema)}, echo = True)
     else:

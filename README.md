@@ -58,7 +58,7 @@ To install tha latest `master` version of Augur-SPDX, use the Makefile in Augur:
 
     $ make install-spdx
 
-## Alternate Install
+#### Alternate Install
 
 You can also Install augur-spdx manually.
 
@@ -74,7 +74,7 @@ If you have any problems installing Nomos, run the install script individually:
 
     $ ./DoSOCSv2-0.x.x/scripts/install-nomos.sh
 
-Usage
+Usage: Command Line Tool
 -----
 
 The simplest use case is scanning a package, generating a
@@ -123,10 +123,61 @@ Use `dosocs2 --help` to get the full help text. The `doc` directory
 here also provides more detailed information about how `dosocs2` works
 and how to use it.
 
-Potential Organizational Use of augur-SPDX
----------------------------------------
+Usage: Augur Worker
+-----
 
-![alt text](https://cloud.githubusercontent.com/assets/656208/20320341/30b9468c-ab37-11e6-8e3f-c63543b85453.png)
+NOTE: This method is experimental <br />
+NOTE: Make sure you are using Python3 with a virtualenv
+
+Augur Includes many extra tools that help automate the work of Augur-SPDX.<br />
+Right now, the best way to run augur-SPDX is to use Augur's extra built-in tools.<br />
+Augur-SPDX will work with some files in augur and take some steps in order.
+
+Here is the process that Augur-SPDX uses:
+
+1. Find all repositories in the Augur database<br />
+2. Scan each stored repository with the Augur-SPDX command-line tool<br />
+3. Generate SPDX Documents for each scanned repository
+
+The scanned repositories and SPDX documents will provide data to augur, namely on the risk page under any repo scanned.
+
+Here are the steps to get it up and running:
+
+1. Switch to the Augur-SPDX branch of Augur:
+    ```
+    git checkout dev-spdx-scanner
+    ```
+
+2. Run the `make` installation for Augur-SPDX under Augur's Makefile:
+    ```
+    make install-spdx
+    ```
+    
+3. Ensure your augur configuration is pointing to the database you want to access and scan
+    ```
+    nano augur.config.json
+    ```
+    
+4. Navigate to the folder with the Augur-SPDX executable
+
+    ```
+    cd /augur/workers/spdx_worker/
+    ```
+    
+5. run the file `director.py`
+
+    ```
+    python3 director.py
+    ```
+    
+The Director will provide information of what it is doing. <br />
+It will scan the repositories in the Augur database, then generate SPDX documents.
+
+Each repository can take anywhere from 10 seconds to 1 hour to scan, and SPDX Documents are usually quicker.<br />
+
+This method is experimental!<br />
+Please report any bugs to 
+[Matt Snell](https://github.com/nebrethar) at <msnell@unomaha.edu>
 
 History
 -------

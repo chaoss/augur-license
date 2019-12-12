@@ -1,7 +1,7 @@
 Augur-SPDX
 =======
 
-Augur-SPDX is a command-line tool for managing SPDX 2.0 documents and data. It can
+Augur-SPDX is a command-line tool for managing SPDX documents and data. It can
 scan source code distributions to produce SPDX information, store that
 information in a relational database, and extract it in a plain-text format
 on request.
@@ -17,7 +17,7 @@ software package license information.
 
 [SPDX](http://www.spdx.org) is a standard format for communicating information
 about the contents of a software package, including license and copyright
-information. Augur-SPDX supports the SPDX 2.0 standard, released in May 2015.
+information. Augur-SPDX supports the SPDX standard.
 
 
 License and Copyright
@@ -56,7 +56,7 @@ Augur-SPDX is most easily installed under the CHAOSS Project Augur
 
 To install tha latest `master` version of Augur-SPDX, use the Makefile in Augur:
 
-    $ Augur make-SPDX
+    $ make install-spdx
 
 ## Alternate Install
 

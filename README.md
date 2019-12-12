@@ -1,50 +1,23 @@
-Augur-SBOM
+Augur-SPDX
 =======
 
-branch | status | vulnerability scanner | status | Python | Status
---- | --- | --- | --- | --- | ---
-master | [![Build Status](https://travis-ci.org/DoSOCSv2/DoSOCSv2.svg?branch=master)](https://travis-ci.org/DoSOCSv2/DoSOCSv2) | BlackDuck CoPilot | [![Black Duck Security Risk](https://copilot.blackducksoftware.com/github/groups/UShan89/locations/DoSOCSv2/public/results/branches/master/badge-risk.svg)](https://copilot.blackducksoftware.com/github/groups/UShan89/locations/DoSOCSv2/public/results/branches/master) | Dependencies | [![Updates](https://pyup.io/repos/github/UShan89/DoSOCSv2/shield.svg)](https://pyup.io/repos/github/UShan89/DoSOCSv2/)
-dev | [![Build Status](https://travis-ci.org/DoSOCSv2/DoSOCSv2.svg?branch=dev)](https://travis-ci.org/DoSOCSv2/DoSOCSv2) | BlackDuck CoPilot | [![Black Duck Security Risk](https://copilot.blackducksoftware.com/github/groups/UShan89/locations/DoSOCSv2/public/results/branches/master/badge-risk.svg)](https://copilot.blackducksoftware.com/github/groups/UShan89/locations/DoSOCSv2/public/results/branches/dev) | Python3 | [![Python 3](https://pyup.io/repos/github/UShan89/DoSOCSv2/python-3-shield.svg)](https://pyup.io/repos/github/UShan89/DoSOCSv2/)
-
-python | status
---- | ---
-Dependencies | [![Updates](https://pyup.io/repos/github/DoSOCSv2/DoSOCSv2/shield.svg)](https://pyup.io/repos/github/DoSOCSv2/DoSOCSv2/)
-Python3 | [![Python 3](https://pyup.io/repos/github/DoSOCSv2/DoSOCSv2/python-3-shield.svg)](https://pyup.io/repos/github/DoSOCSv2/DoSOCSv2/)
-
-
-dosocs2 is a command-line tool for managing SPDX 2.0 documents and data. It can
+Augur-SPDX is a command-line tool for managing SPDX 2.0 documents and data. It can
 scan source code distributions to produce SPDX information, store that
 information in a relational database, and extract it in a plain-text format
 on request.
 
 The discovery and presentation of software package license information is a complex
 problem facing organizations that rely on open source software within their 
-innovation streams. dosocs2 enables creation of an SPDX document for any 
-software package to represent associated license information. In addition, dosocs2 
+innovation streams. Augur-SPDX enables creation of an SPDX document for any 
+software package to represent associated license information. In addition, Augur-SPDX 
 can be used in the creation and continuous maintenance of an inventory of all 
-open-source software used in an organization. The primary audience for dosocs2 is open source
+open-source software used in an organization. The primary audience for Augur-SPDX is open source
 software teams seeking to advance the representation and maintenance of open source 
 software package license information. 
 
 [SPDX](http://www.spdx.org) is a standard format for communicating information
 about the contents of a software package, including license and copyright
-information. dosocs2 supports the SPDX 2.0 standard, released in May 2015.
-
-dosocs2 is under heavy development; expect frequent backwards-incompatible
-changes until a 1.x.x release!
-
-### Current deviations from SPDX 2.0 specification
-
-* Exactly one package per document is required. (SPDX 2.0 allows zero or more
-  packages per document.)
-* Files in a document can only exist within a package. (SPDX 2.0 allows files
-  to exist outside of a package.)
-* Checksums are always assumed to be SHA-256. (SPDX 2.0 permits SHA-1, SHA-256,
-  and MD5)
-* A file may be an artifact of only one project.
-* License expression syntax is not parsed; license expressions are interpreted as license
-  names that are not on the SPDX license list.
-* Deprecated fields from SPDX 1.2 (reviewer info and file dependencies) are not supported.
+information. Augur-SPDX supports the SPDX 2.0 standard, released in May 2015.
 
 
 License and Copyright
@@ -52,7 +25,7 @@ License and Copyright
 
 Copyright © 2015 University of Nebraska at Omaha
 
-dosocs2 is free software: you can redistribute it and/or modify it under the
+Augur-SPDX is free software: you can redistribute it and/or modify it under the
 terms of the GNU General Public License as published by the Free Software
 Foundation, either version 2 of the License, or (at your option) any later
 version. See the file LICENSE for more details.
@@ -79,9 +52,15 @@ Installation
 
 ### Step 1 - Download and install
 
-[Grab the source tarball for the latest
-release](https://github.com/ttgurney/dosocs2/releases) and use `pip` to install
-it as a package. Replace `0.x.x` with the latest release version number.
+Augur-SPDX is most easily installed under the CHAOSS Project Augur
+
+To install tha latest `master` version of Augur-SPDX, use the Makefile in Augur:
+
+    $ Augur make-SPDX
+
+## Alternate Install
+
+You can also Install augur-spdx manually.
 
 We recommend doing this inside a Python
 [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/), but it
@@ -91,61 +70,9 @@ This installation can be achieved through the Makefile in the augur-sbom directo
 
     $ sudo make install
 
-If you have any problems installing Nomos, run the install script:
+If you have any problems installing Nomos, run the install script individually:
 
     $ ./DoSOCSv2-0.x.x/scripts/install-nomos.sh
-    
-The Makefile may also be used to create a configuration file and initialize the database:
-
-    $ sudo make create
-
-### Step 2 (Optional) - Change the default configuration
-
-Not required, but strongly recommended, is to generate an initial config
-file:
-
-    $ dosocs2 newconfig
-    dosocs2: wrote config file to /home/tom/.config/dosocs2/dosocs2.conf
-
-The default config points to a SQLite database stored in your home directory.
-For example, for user `tom`, this database would be created at
-`/home/tom/.config/dosocs2/dosocs2.sqlite3`. If you like, you can open the
-config file and change the `connection_uri` variable to use a different
-location for the database.
-
-
-### Step 3 (Optional) - Add PostgreSQL configuration
-
-Follow this step if you want to use PostgreSQL instead of SQLite for the
-SPDX database.
-
-You will have to create the `spdx` (or whatever name you want) role and
-database yourself.  I recommend setting a different password than the
-one given...:
-
-    $ sudo -u postgres psql
-    psql (9.3.9)
-    Type "help" for help.
-
-    postgres=# create role spdx with login password 'spdx';
-    CREATE ROLE
-    postgres=# create database spdx with owner spdx;
-    CREATE DATABASE
-
-Then change the `connection_uri` variable in your `dosocs2.conf`:
-
-    # connection_uri = postgresql://user:pass@host:port/database
-    connection_uri = postgresql://spdx:spdx@localhost:5432/spdx
-
-
-### Step 4 - Database setup
-
-Finally, to create all necessary tables and views in the database:
-
-    $ dosocs2 dbinit
-
-You only need to do this once. **This command will drop all
-existing tables from your SPDX database, so be careful!**
 
 Usage
 -----
@@ -196,27 +123,25 @@ Use `dosocs2 --help` to get the full help text. The `doc` directory
 here also provides more detailed information about how `dosocs2` works
 and how to use it.
 
-Potential Organizational Use of dosocs2
+Potential Organizational Use of augur-SPDX
 ---------------------------------------
 
 ![alt text](https://cloud.githubusercontent.com/assets/656208/20320341/30b9468c-ab37-11e6-8e3f-c63543b85453.png)
 
 History
 -------
-
-dosocs2 owes its name and concept to the
+Augur-SPDX owes its software name and concept to the
 [DoSOCS](https://github.com/socs-dev-env/DoSOCS) tool created by Zac
 McFarland, which in turn was spun off from the [do_spdx](https://github.com/ttgurney/yocto-spdx/blob/master/src/spdx.bbclass) plugin for Yocto
 Project, created by Jake Cloyd and Liang Cao.
-
-dosocs2 aims to fill the same role as DoSOCS, but with support for SPDX 2.x, a
-larger feature set, and a more modular implementation, among other changes.
+Augur-SPDX aims to fill the same role as DoSOCS, but with support for future versions of Augur, a
+larger feature set, and a more modular implementation.
 
 
 Maintainers
 -----------
 
-[DoSOCSv2 organization](https://github.com/DoSOCSv2)
+[Matt Snell](https://github.com/nebrethar)
 
 
 (This work has been funded through the National Science Foundation VOSS-IOS Grant: 1122642.)

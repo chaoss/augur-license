@@ -193,6 +193,7 @@ Maintainers
 -----------
 
 [Matt Snell](https://github.com/nebrethar)
+[Sean Goggins](https://github.com/sgoggins)
 
 
 (This work has been funded through the National Science Foundation VOSS-IOS Grant: 1122642.)

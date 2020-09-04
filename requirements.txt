@@ -11,11 +11,4 @@ beaker
 click
 psutil
 six>=1.14.0
-subprocess
-json
-re
-os
-os.path
 pathlib
-./sbom_populate.py as p
-./initial_scans.py as s

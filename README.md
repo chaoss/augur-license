@@ -1,58 +1,27 @@
 Augur-SPDX
 =======
 
-Augur-SPDX is a command-line tool for managing SPDX documents and data. It can
-scan source code distributions to produce SPDX information, store that
-information in a relational database, and extract it in a plain-text format
-on request.
-
-The discovery and presentation of software package license information is a complex
-problem facing organizations that rely on open source software within their 
-innovation streams. Augur-SPDX enables creation of an SPDX document for any 
-software package to represent associated license information. In addition, Augur-SPDX 
-can be used in the creation and continuous maintenance of an inventory of all 
-open-source software used in an organization. The primary audience for Augur-SPDX is open source
-software teams seeking to advance the representation and maintenance of open source 
-software package license information. 
-
-[SPDX](http://www.spdx.org) is a standard format for communicating information
-about the contents of a software package, including license and copyright
-information. Augur-SPDX supports the SPDX standard.
+Augur-SPDX is designed as a library for use with the Augur project to perform software license scanning, and the data it produces is displayed in the "Risk" section of the Augur Frontend. Data is stored in the Postgresql `SPDX` schema of Augur, with a mapping table between how Augur-SPDX represents repositories and how Augur represents repositories in the `augur_data` schema. 
 
 
-License and Copyright
----------------------
+Augur-SPDX is a command-line tool for managing SPDX documents and data. It can scan source code distributions to produce SPDX information, store that information in a relational database, and extract it in a plain-text format on request.
 
-Copyright © 2015 University of Nebraska at Omaha
+The discovery and presentation of software package license information is a complex problem facing organizations that rely on open source software within their 
+innovation streams. Augur-SPDX enables creation of an SPDX document for any  software package to represent associated license information. In addition, Augur-SPDX 
+can be used in the creation and continuous maintenance of an inventory of all  open-source software used in an organization. The primary audience for Augur-SPDX is open source software teams seeking to advance the representation and maintenance of open source  software package license information. 
 
-Augur-SPDX is free software: you can redistribute it and/or modify it under the
-terms of the GNU General Public License as published by the Free Software
-Foundation, either version 2 of the License, or (at your option) any later
-version. See the file LICENSE for more details.
-
-All associated documentation is licensed under the terms of the Creative
-Commons Attribution Share-Alike 3.0 license. See the file CC-BY-SA-3.0 for more
-details.
-
+[SPDX](http://www.spdx.org) is a standard format for communicating information about the contents of a software package, including license and copyright information. Augur-SPDX supports the SPDX standard.
 
 Dependencies
 ------------
-
 - Python 3.6
-
-Optional:
 - PostgreSQL 8.x or later version (can be on a separate machine)
-
-Python libraries:
 - All Python dependencies are handled automatically by `pip`.
-
 
 Installation
 ------------
 
 ### Step 1 - Download and install
-
-Augur-SPDX is most easily installed under the CHAOSS Project Augur
 
 To install tha latest `master` version of Augur-SPDX, use the Makefile in Augur:
 
@@ -62,9 +31,8 @@ To install tha latest `master` version of Augur-SPDX, use the Makefile in Augur:
 
 You can also Install augur-spdx manually.
 
-We recommend doing this inside a Python
-[virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/), but it
-is not a requirement.
+We recommend doing this inside a Python [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/), but it
+is not a requirement. In much the same way that its not a requirement to avoid serving peanuts to somebody with a peanut allergy. Use a virtual environment. The easiest way to set one up is to install `virtualenv` for your operating system, then run `virtualenv --python=python3 <location of virtualenv>. After that, you activate it by typing `source <path to virtualenv>/bin/activate`. When you want to deactivate the virtualenv, type `deactivate`. 
 
 This installation can be achieved through the Makefile in the augur-sbom directory.
 
@@ -188,6 +156,19 @@ Project, created by Jake Cloyd and Liang Cao.
 Augur-SPDX aims to fill the same role as DoSOCS, but with support for future versions of Augur, a
 larger feature set, and a more modular implementation.
 
+License and Copyright
+---------------------
+
+Copyright © 2015 University of Nebraska at Omaha, Copyright © 2020 University of Nebraska at Omaha, University of Missouri
+
+Augur-SPDX is free software: you can redistribute it and/or modify it under the
+terms of the GNU General Public License as published by the Free Software
+Foundation, either version 2 of the License, or (at your option) any later
+version. See the file LICENSE for more details.
+
+All associated documentation is licensed under the terms of the Creative
+Commons Attribution Share-Alike 3.0 license. See the file CC-BY-SA-3.0 for more
+details.
 
 Maintainers
 -----------

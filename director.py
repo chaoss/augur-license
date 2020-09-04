@@ -5,12 +5,14 @@ import json
 import re
 import os
 import requests
+import sys
+import getopt
 
 import sbom_populate as p
 import initial_scans as s
 
 if __name__ == "__main__":
-    with open("../../augur.config.json") as json_file:
+    with open("../augur-zephyr/augur.config.json") as json_file:
         config = json.load(json_file)
         dbname = config["Database"]["database"]
         user = config["Database"]["user"]

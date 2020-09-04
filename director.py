@@ -21,7 +21,7 @@ if __name__ == "__main__":
         port = config["Database"]["port"]
         dsfile = config["Workers"]["license_worker"]["tagfile"]
         ipath = config["Workers"]["facade_worker"]["repo_directory"]
-
+        depth = config["Workers"]["license_worker"]["search_depth"]
         configtools = 'postgresql://{}:{}@{}:{}/{}'.format(
             user, password, host, port, dbname
         )
@@ -35,7 +35,7 @@ if __name__ == "__main__":
         print("---------------------")
         print("INITIAL SCANS RUNNING")
         print("---------------------")
-        s.scan(dbname, user, password, host, port, dsfile, ipath)
+        s.scan(dbname, user, password, host, port, dsfile, ipath, depth)
         print("------------------")
         print("SBOM SCANS RUNNING")
         print("------------------")

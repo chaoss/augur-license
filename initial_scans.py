@@ -8,7 +8,7 @@ import os
 import requests
 
 flevel = 0
-
+depth = 6
 def depthwalk(ipath, depth, match):
    k = 0
    #print("IPATH " + ipath)

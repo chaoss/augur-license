@@ -76,6 +76,7 @@ larger feature set, and a more modular implementation.
 ---------------------
 
 Copyright © 2015 University of Nebraska at Omaha
+
 Copyright © 2020 University of Nebraska at Omaha, and University of Missouri
 
 Augur-SPDX is free software: you can redistribute it and/or modify it under the

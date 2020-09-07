@@ -4,12 +4,11 @@ Dependencies
 ------------
 
 - Python 3.6 or later version
-
-Optional:
 - PostgreSQL 8.x or later version (can be on a separate machine)
+- Installed instance of [Augur](https://github.com/chaoss/augur) that has had the `facade worker` run at least one time. Without this step there will be no cloned repos to scan. 
 
 Python libraries:
-- All Python dependencies are handled automatically by `pip`.
+- All Python dependencies are handled automatically by `pip` during installation.
 
 **Augur-SPDX runs as a process to populate the `SPDX` schema with SPDX license information in [Augur](https://github.com/chaoss/augur). Available [Fossology](https://www.fossology.org/) license scanners only compile on Ubuntu's current long term maintenance version due to library dependencies. Believe us, we have spent many hours trying to compile on Mac OSX and Fedora. In the future, we will provide a docker container to enable this functionality across platforms**
 
@@ -19,7 +18,8 @@ Installation
 ### Step 1 - Download and install
 1. `git clone https://github.com/chaoss/augur-spdx`
 2. `sudo make install-spdx` **It is necessary to compile using sudo because the license scanners provided by [Fossology](https://www.fossology.org/) are designed only to be installed at the system level**
-3. **temporary** Edit the `spdx.config.json` file so that the path points to the location of your [Augur](https://github.com/chaoss/augur) cloned repositories. This can be found in the `augur.config.json` file for the instance you wish to scan licenses for. 
+3. `pip install .`
+4. **temporary** Edit the `spdx.config.json` file so that the path points to the location of your [Augur](https://github.com/chaoss/augur) cloned repositories. This can be found in the `augur.config.json` file for the instance you wish to scan licenses for. 
 
 ### Step 2 - Run Augur-SPDX **NOTE: You can only run one instance of Augur-SPDX at at time**
 1. `nohup python3 director.py <path to augur instance root> >spdx.log 2>spdx.err &` Usually, this is something like `nohup python3 director.py ../augur-chaoss >spdx.log 2>spdx.err &`

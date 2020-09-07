@@ -31,7 +31,7 @@ if __name__ == "__main__":
         config2 = json.load(json_file2)
         dsfile = config2["license_worker"]["tagfile"]
         depth = config2["license_worker"]["search_depth"]
-        ipath = config["workers"]["facade_worker"]["repo_directory"]
+        ipath = config["Workers"]["facade_worker"]["repo_directory"]
         home = expanduser("~")
 
         print("IPATH EQUALS " + ipath)

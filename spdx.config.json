@@ -1,6 +1,6 @@
 {
         "license_worker": {
-            "repo_directory": "/home/sean/repos/",
+            "repo_directory": "/home/sean/repos/unicef",
             "tagfile": "3.0.tag",
             "search_depth": 5
         }

@@ -29,7 +29,9 @@ Installation
 5. When the process finishes, check to see if there are any Augur repos not in the mapping table by executing `cat spdx.log | grep MAPPING` . If you see any rows, create an issue with the full output of the log at https://github.com/chaoss/augur-spdx 
 
 =======
+
 # Augur-SPDX Description and Purpose
+
 =======
 Augur-SPDX is a command-line tool for managing SPDX documents and data. It can
 scan source code distributions to produce SPDX information, store that

@@ -63,7 +63,11 @@ def register_file(conn, path, packageid, known_sha256=None):
         select([db.file_types.c.file_type_id])
         .where(db.file_types.c.name == util.spdx_filetype(path))
         )
-    file_type_id = conn.execute(file_type_query).fetchone()['file_type_id']
+    file_type_id_1 = conn.execute(file_type_query)
+    if not conn.execute(file_type_query):
+      file_type_id = 7
+    else:
+      file_type_id = file_type_id_1.fetchone()['file_type_id']
     file = {
         'sha256': sha256,
         'file_type_id': file_type_id,

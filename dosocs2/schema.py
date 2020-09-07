@@ -45,8 +45,8 @@ licenses = Table('licenses', meta,
     )
 
 file_types = Table('file_types', meta,
-    Column('file_type_id', Integer, primary_key=True),
-    Column('name', String(255), nullable=False),
+    Column('file_type_id', Integer),
+    Column('name', String(255), primary_key=True),
     UniqueConstraint('name', name='uc_file_type_name')
     )
 
@@ -59,14 +59,13 @@ projects = Table('projects', meta,
 
 files = Table('files', meta,
     Column('file_id', Integer, primary_key=True),
-    Column('file_type_id', Integer, nullable=False),
+    Column('file_type_id', Integer, nullable=True),
     Column('sha256', String(64), nullable=False),
     Column('copyright_text', Text),
     Column('package_id', Integer),
     Column('comment', Text, nullable=False),
     Column('notice', Text, nullable=False),
     UniqueConstraint('sha256', name='uc_file_sha256'),
-    ForeignKeyConstraint(['file_type_id'], ['file_types.file_type_id'])
     )
 
 files_licenses = Table('files_licenses', meta,

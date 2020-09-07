@@ -133,7 +133,7 @@ def documents_files(docid, package_id):
         .join(pac, doc.c.package_id == pac.c.package_id)
         .join(pfi, pac.c.package_id == pfi.c.package_id)
         .join(fil, pfi.c.file_id == fil.c.file_id)
-        .join(fty, fil.c.file_type_id == fty.c.file_type_id)
+        #.join(fty, fil.c.file_type_id == fty.c.file_type_id)
         .join(ide,
               (pfi.c.package_file_id == ide.c.package_file_id) &
               (doc.c.document_namespace_id == ide.c.document_namespace_id)

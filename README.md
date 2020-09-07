@@ -33,6 +33,7 @@ Installation
 # Augur-SPDX Description and Purpose
 
 =======
+
 Augur-SPDX is a command-line tool for managing SPDX documents and data. It can
 scan source code distributions to produce SPDX information, store that
 information in a relational database, and extract it in a plain-text format

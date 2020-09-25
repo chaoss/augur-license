@@ -1,7 +1,7 @@
 {
         "license_worker": {
-            "repo_directory": "/home/sean/repos/unicef",
+            "repo_directory": "/home/sean/repos/howison-repos",
             "tagfile": "3.0.tag",
-            "search_depth": 5
+            "search_depth": 6 
         }
 }

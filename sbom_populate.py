@@ -55,12 +55,14 @@ def parse_json(doc_1, cre_1, pac_1, pac_lif_1, pac_2, fil_dat_1, fil_rel_1, bas_
         temp_2["Relationship " + str(k)] = bas_rel_1[k][1]
     bas_rel_temp = {**temp_2}
 
-    temp_1 = {}
-    for i in range(0, int(len(cov_1[0])/2)):
+    if cov_1:
+      temp_1 = {}
+      for i in range(0, int(len(cov_1[0])/2)):
         j = i*2
         temp_1[cov_1[0][j]] = cov_1[0][j+1]
-
-    cov_temp = {**temp_1}
+      cov_temp = {**temp_1}
+    else:
+      cov_temp = {}
 
     license_information['Document Information'] = doc_1_temp
     license_information['Creation Information'] = cre_1_temp

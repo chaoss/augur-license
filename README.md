@@ -21,8 +21,12 @@ Installation
 Note: It is necessary to compile using sudo because the license scanners provided by [Fossology](https://www.fossology.org/) are designed only to be installed at the system level
 3. `pip install .`
 
-### Step 3 - Initialize the Database
-Working on docs..
+### Step 3 - Initialize the Database Schema (spdx) <br/>
+NOTE: You can also use these steps to reinitialize or update a database
+1. `python3 initial.py <path to augur instance root>` <br> Example: `python3 initial.py ../augur-chaoss`
+2. After this, run `dosocs2 dbinit`
+3. The program will prompt you to ensure that you have the right database. Please double check
+4. Any existing tables that fit the schema will be dropped, and a new set of tables will be created and populated.
 
 ### Step 3 - Run Augur-SPDX <br/>
 NOTE: You can only run one instance of Augur-SPDX at at time
@@ -75,7 +79,7 @@ larger feature set, and a more modular implementation.
 # Maintainers
 -----------
 
-[Matt Snell](https://github.com/nebrethar)
+[Matt Snell](https://github.com/nebrethar) <br/>
 [Sean Goggins](https://github.com/sgoggins)
 
 # License and Copyright

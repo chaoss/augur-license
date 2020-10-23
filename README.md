@@ -17,16 +17,22 @@ Installation
 
 ### Step 1 - Download and install
 1. `git clone https://github.com/chaoss/augur-spdx`
-2. `sudo make install-spdx` **It is necessary to compile using sudo because the license scanners provided by [Fossology](https://www.fossology.org/) are designed only to be installed at the system level**
+2. `sudo make install-spdx` 
+Note: It is necessary to compile using sudo because the license scanners provided by [Fossology](https://www.fossology.org/) are designed only to be installed at the system level
 3. `pip install .`
-4. **temporary** Edit the `spdx.config.json` file so that the path points to the location of your [Augur](https://github.com/chaoss/augur) cloned repositories. This can be found in the `augur.config.json` file for the instance you wish to scan licenses for. 
 
-### Step 2 - Run Augur-SPDX **NOTE: You can only run one instance of Augur-SPDX at at time**
-1. `nohup python3 director.py <path to augur instance root> >spdx.log 2>spdx.err &` Usually, this is something like `nohup python3 director.py ../augur-chaoss >spdx.log 2>spdx.err &`
-2. Wait about 30 seconds to make sure there is not an error that terminates the process. 
-3. `tail -30 spdx.log` - Check that licenses are being scanned
-4. `cat spdx.err` - Check that there are not a lot of errors. 
-5. When the process finishes, check to see if there are any Augur repos not in the mapping table by executing `cat spdx.log | grep MAPPING` . If you see any rows, create an issue with the full output of the log at https://github.com/chaoss/augur-spdx 
+### Step 3 - Initialize the Database
+Working on docs..
+
+### Step 3 - Run Augur-SPDX <br/>
+NOTE: You can only run one instance of Augur-SPDX at at time
+1. `nohup python3 director.py <path to augur instance root> >spdx.log 2>spdx.err &` <br> Example: `nohup python3 director.py ../augur-chaoss >spdx.log 2>spdx.err &`
+2. Wait about 30 seconds to allow the program to run. 
+3. `tail -30 spdx.log` - Check that licenses are being scanned.
+4. `cat spdx.err` - Check for errors. 
+5. When the process finishes, check to see if there are any Augur repos not in the mapping table by executing `cat spdx.log | grep MAPPING` . 
+
+- If you see any problems, create an issue with the full output of the log at https://github.com/chaoss/augur-spdx 
 
 -----
 

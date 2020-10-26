@@ -24,7 +24,7 @@ Note: It is necessary to compile using sudo because the license scanners provide
 ### Step 3 - Initialize the Database Schema (spdx) <br/>
 NOTE: You can also use these steps to reinitialize or update a database
 1. `python3 initial.py <path to augur instance root>` <br> Example: `python3 initial.py ../augur-chaoss`
-2. After this, run `dosocs2 dbinit`
+2. After this, run `dosocs2 dbinit --config dosocs2.conf` in the augur-spdx directory
 3. The program will prompt you to ensure that you have the right database. Please double check
 4. Any existing tables that fit the schema will be dropped, and a new set of tables will be created and populated.
 

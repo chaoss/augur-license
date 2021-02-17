@@ -2,6 +2,9 @@ from pathlib import Path
 import sbom_populate as p
 import initial_scans as s
 import sys
+import json
+import os.path 
+import re
 
 if __name__ == "__main__":
     if not len(sys.argv) > 1:
@@ -24,7 +27,7 @@ if __name__ == "__main__":
         dsfile = config2["license_worker"]["tagfile"]
         depth = config2["license_worker"]["search_depth"]
         ipath = config["Workers"]["facade_worker"]["repo_directory"]
-        home = expanduser("~")
+        home = os.path.expanduser("~/")
 
         print("IPATH EQUALS " + ipath)
         print("HOME EQUALS " + home)

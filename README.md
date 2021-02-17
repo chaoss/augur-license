@@ -17,9 +17,11 @@ Installation
 
 ### Step 1 - Download and install
 1. `git clone https://github.com/chaoss/augur-spdx`
-2. `sudo make install-spdx` 
+2. Create a python3 virtual enviornment `virtualenv --python=python3 venv-name`
+3. Activate Python virtual environment `source venv-name/bin/activate`
+4. `pip install .`
+5. `sudo make install-spdx` 
 Note: It is necessary to compile using sudo because the license scanners provided by [Fossology](https://www.fossology.org/) are designed only to be installed at the system level
-3. `pip install .`
 
 ### Step 3 - Initialize the Database Schema (spdx) <br/>
 NOTE: You can also use these steps to reinitialize or update a database

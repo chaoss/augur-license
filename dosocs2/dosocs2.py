@@ -84,13 +84,21 @@ import docopt
 __version__ = '0.16.1'
 
 
-from . import configtools
-from . import dbinit
-from . import discover
-from . import render
-from . import schema as db
-from . import spdxdb
-from . import util
+#from . import configtools
+#from . import dbinit
+#from . import discover
+#from . import render
+#from . import schema as db
+#from . import spdxdb
+#from . import util
+from dosocs2.configtools import *
+from dosocs2.dbinit import * 
+from dosocs2.discover import *
+from dosocs2.render import *
+import dosocs2.schema as db
+from dosocs2.spdxdb import *
+from dosocos2.util import *
+
 
 
 format_map = {

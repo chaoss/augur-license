@@ -1,6 +1,6 @@
 {
         "license_worker": {
-            "repo_directory": "/home/sean/repos/qt",
+            "repo_directory": "/home/sean/repos/zephyr/",
             "tagfile": "3.0.tag",
             "search_depth": 6 
         }

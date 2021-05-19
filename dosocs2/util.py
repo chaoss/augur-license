@@ -29,7 +29,8 @@ import tempfile
 import uuid
 import zipfile
 
-import magic
+# This was `import magic`, but no such library exists.
+import libmagic
 
 
 def bool_from_str(s):

@@ -1,7 +1,10 @@
 from setuptools import setup
+from setuptools import find_packages
 
 _dosocs2_version = '0.16.1'
 
+
+#spg adding dosocs2 libs
 install_requires=[
     'jinja2',
     'python-magic',
@@ -36,7 +39,8 @@ setup(
         ],
 
     keywords='spdx license licenses',
-    packages=['dosocs2', 'dosocs2.scanners'],
+    #packages=['dosocs2', 'dosocs2.scanners'],
+    packages=['dosocs2', 'dosocs2.scanners', find_packages()],
     install_requires=install_requires,
     tests_require=tests_require,
     extras_require={

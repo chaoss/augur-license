@@ -30,7 +30,7 @@ Installation
 Note: It is necessary to compile using sudo because the license scanners provided by [Fossology](https://www.fossology.org/) are designed only to be installed at the system level
 
 ### Step 2 - Install System Level libmagic
-1. `sudo apt install libmagic-1`
+1. `sudo apt install libmagic1`
 
 **This is necessary for the scanners**
 

@@ -29,6 +29,11 @@ Installation
 5. `sudo make install-spdx` 
 Note: It is necessary to compile using sudo because the license scanners provided by [Fossology](https://www.fossology.org/) are designed only to be installed at the system level
 
+### Step 2 - Install System Level libmagic
+1. `sudo apt install libmagic-1`
+
+**This is necessary for the scanners**
+
 ### Step 3 - Initialize the Database Schema (spdx) <br/>
 NOTE: You can also use these steps to reinitialize or update a database
 1. `python3 initial.py <path to augur instance root>` <br> Example: `python3 initial.py ../augur-chaoss`

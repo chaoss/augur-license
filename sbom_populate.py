@@ -82,34 +82,43 @@ def grabreg(records, repo_id, dsfile, conf):
 
     print(records)
     print("CONF: " + str(conf))
-    proc = subprocess.Popen("dosocs2 generate " + str(records[0][0]) + " --config " + str(conf), shell=True, stdout=PIPE, stderr=PIPE)
-    varerr = str(str(proc.stderr.read()).split("document_id: ")[1])
-    #print("VARERR" + str(varerr))
-    charvarerr = varerr.split("\\")[0]
-    print("Document_id: " + str(charvarerr))
-    #f = open("/home/sean/dosocs2/accessDB/scans-tv/" + repo_name + "-full.txt","w")
-    #proc = subprocess.call("dosocs2 print " + str(charvarerr) + " -T 2.0.tag.coverage", shell=True, stdout=f, stderr=f)
-    pope = subprocess.Popen("dosocs2 print " + str(charvarerr) + " -T " + dsfile + " --config " + str(conf), shell=True, stdout=PIPE, stderr=PIPE)
-    out, err = pope.communicate()
-    if out:
-        with open('ex-raw.txt', 'w+') as example:
-            example.write(out.decode('UTF-8'))
-    if err:
-        print(err.decode('UTF-8'))
-    #print (out)
-    #package_sr_1 = re.findall(r'(PackageName): (.*)\n(SPDXID): (.*)\n(PackageVersion|)? ?(.*|)\n?(PackageFileName): (.*)\n(PackageSupplier): (.*)\n(PackageOriginator): (.*)\n(PackageDownloadLocation): (.*)\n(PackageVerificationCode):? ?(.*|)\n?(PackageHomePage): (.*)\n(PackageLicenseConcluded):', out.decode('UTF-8'))
-    doc_1 = re.findall(r'(DataLicense): (.*)\n(SPDXID): (.*)\n(DocumentNamespace): (.*)\n(DocumentName): (.*)\n(DocumentComment|): ?(.*|)\n?(LicenseListVersion):(.*)', out.decode('UTF-8'))
-    print(doc_1)
-    cre_1 = re.findall(r'(Creator): (.*)\n(Created): (.*)\n(CreatorComment|): ?(.*|)', out.decode('UTF-8'))
-    pac_1 = re.findall(r'(PackageName): (.*)\n(SPDXID): (.*)\n(PackageFileName): (.*)\n(PackageDownloadLocation): (.*)\n(PackageVerificationCode): (.*)\n(PackageHomePage): (.*)\n(PackageLicenseConcluded): (.*)\n(PackageLicenseDeclared): (.*)', out.decode('UTF-8'))
-    pac_lif_1 = re.findall(r'(PackageLicenseInfoFromFiles): (.*)', out.decode('UTF-8'))
-    pac_2 = re.findall(r'(PackageCopyrightText): (.*)', out.decode('UTF-8'))
-    fil_dat_1 = re.findall(r'(FileName): (.*)\n(SPDXID): (.*)\n(FileType): (.*)\n(FileChecksum): (.*)\n(LicenseConcluded): (.*)\n(LicenseInfoInFile): (.*)\n(LicenseComments|): ?(.*|)\n(FileCopyrightText): (.*)\n(FileComment|): ?(.*|)\n(FileNotice|): ?(.*|)\n', out.decode('UTF-8'))
-    fil_rel_1 = re.findall(r'(## Relationships)\n((\w.*)\n)*', out.decode('UTF-8'))
-    bas_rel_1 = re.findall(r'## --------------- Relationship ---------------\n(Relationship): (.*?)\n', out.decode('UTF-8'))
-    cov_1 = re.findall(r'(TotalFiles): (.*)\n(DeclaredLicenseFiles): (.*)\n(PercentTotalLicenseCoverage): (.*)\n', out.decode('UTF-8'))
-    print("COVERAGE: " + str(cov_1))
-    return (doc_1, cre_1, pac_1, pac_lif_1, pac_2, fil_dat_1, fil_rel_1, bas_rel_1, cov_1)
+    if len(records) >= 1:
+        proc = subprocess.Popen("dosocs2 generate " + str(records[0][0]) + " --config " + str(conf), shell=True, stdout=PIPE, stderr=PIPE)
+        outp = proc.stderr.read()
+    else:
+        print("NO DATA IN DOCUMENT")
+        outp = "NO DATA"
+    if "document_id: " not in str(outp):
+        print("REPO DOES NOT HAVE ENOUGH DATA")
+        return {}
+    else:
+        varerr = str(str(outp).split("document_id: ")[1])
+        #print("VARERR" + str(varerr))
+        charvarerr = varerr.split("\\")[0]
+        print("Document_id: " + str(charvarerr))
+        #f = open("/home/sean/dosocs2/accessDB/scans-tv/" + repo_name + "-full.txt","w")
+        #proc = subprocess.call("dosocs2 print " + str(charvarerr) + " -T 2.0.tag.coverage", shell=True, stdout=f, stderr=f)
+        pope = subprocess.Popen("dosocs2 print " + str(charvarerr) + " -T " + dsfile + " --config " + str(conf), shell=True, stdout=PIPE, stderr=PIPE)
+        out, err = pope.communicate()
+        if out:
+            with open('ex-raw.txt', 'w+') as example:
+                example.write(out.decode('UTF-8'))
+        if err:
+            print(err.decode('UTF-8'))
+        #print (out)
+        #package_sr_1 = re.findall(r'(PackageName): (.*)\n(SPDXID): (.*)\n(PackageVersion|)? ?(.*|)\n?(PackageFileName): (.*)\n(PackageSupplier): (.*)\n(PackageOriginator): (.*)\n(PackageDownloadLocation): (.*)\n(PackageVerificationCode):? ?(.*|)\n?(PackageHomePage): (.*)\n(PackageLicenseConcluded):', out.decode('UTF-8'))
+        doc_1 = re.findall(r'(DataLicense): (.*)\n(SPDXID): (.*)\n(DocumentNamespace): (.*)\n(DocumentName): (.*)\n(DocumentComment|): ?(.*|)\n?(LicenseListVersion):(.*)', out.decode('UTF-8'))
+        #print(doc_1)
+        cre_1 = re.findall(r'(Creator): (.*)\n(Created): (.*)\n(CreatorComment|): ?(.*|)', out.decode('UTF-8'))
+        pac_1 = re.findall(r'(PackageName): (.*)\n(SPDXID): (.*)\n(PackageFileName): (.*)\n(PackageDownloadLocation): (.*)\n(PackageVerificationCode): (.*)\n(PackageHomePage): (.*)\n(PackageLicenseConcluded): (.*)\n(PackageLicenseDeclared): (.*)', out.decode('UTF-8'))
+        pac_lif_1 = re.findall(r'(PackageLicenseInfoFromFiles): (.*)', out.decode('UTF-8'))
+        pac_2 = re.findall(r'(PackageCopyrightText): (.*)', out.decode('UTF-8'))
+        fil_dat_1 = re.findall(r'(FileName): (.*)\n(SPDXID): (.*)\n(FileType): (.*)\n(FileChecksum): (.*)\n(LicenseConcluded): (.*)\n(LicenseInfoInFile): (.*)\n(LicenseComments|): ?(.*|)\n(FileCopyrightText): (.*)\n(FileComment|): ?(.*|)\n(FileNotice|): ?(.*|)\n', out.decode('UTF-8'))
+        fil_rel_1 = re.findall(r'(## Relationships)\n((\w.*)\n)*', out.decode('UTF-8'))
+        bas_rel_1 = re.findall(r'## --------------- Relationship ---------------\n(Relationship): (.*?)\n', out.decode('UTF-8'))
+        cov_1 = re.findall(r'(TotalFiles): (.*)\n(DeclaredLicenseFiles): (.*)\n(PercentTotalLicenseCoverage): (.*)\n', out.decode('UTF-8'))
+        print("COVERAGE: " + str(cov_1))
+        return (doc_1, cre_1, pac_1, pac_lif_1, pac_2, fil_dat_1, fil_rel_1, bas_rel_1, cov_1)
 
 def scan(dbname, user, password, host, port, dsfile, ipath, conf):
     connection = psycopg2.connect(
@@ -135,10 +144,13 @@ def scan(dbname, user, password, host, port, dsfile, ipath, conf):
             cur.execute("select dosocs_pkg_id from spdx.augur_repo_map where repo_id = " + str(repo_id) + " LIMIT 1;")
             records = cur.fetchall()
             print("****************")
-            if records and records[0][0] != None:
-                (doc_1, cre_1, pac_1, pac_lif_1, pac_2, fil_dat_1, fil_rel_1, bas_rel_1, cov_1) = grabreg(records, repo_id, dsfile, conf)
+            result = grabreg(records, repo_id, dsfile, conf)
+            if records and records[0][0] != None and len(result) > 0:
+                #print("RESULT: " + str(result))
+                (doc_1, cre_1, pac_1, pac_lif_1, pac_2, fil_dat_1, fil_rel_1, bas_rel_1, cov_1) = result
                 parse_json(doc_1, cre_1, pac_1, pac_lif_1, pac_2, fil_dat_1, fil_rel_1, bas_rel_1, cov_1, cur, repo_id)
                 connection.commit()
+                #return 1
             else:
                 print("ERROR: RECORD DOES NOT EXIST IN MAPPING TABLE")
         else:

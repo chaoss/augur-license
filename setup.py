@@ -7,7 +7,8 @@ install_requires=[
     'python-magic',
     'docopt',
     'SQLAlchemy',
-    'psycopg2'
+    'psycopg2',
+    'requests'
     ]
 
 tests_require=[

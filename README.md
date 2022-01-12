@@ -100,7 +100,7 @@ larger feature set, and a more modular implementation.
 
 Copyright © 2015 University of Nebraska at Omaha
 
-Copyright © 2020 University of Nebraska at Omaha, and University of Missouri
+Copyright © 2022 University of Nebraska at Omaha, and University of Missouri
 
 All associated documentation is licensed under the terms of the Creative
 Commons Attribution Share-Alike 3.0 license. See the file CC-BY-SA-3.0 for more

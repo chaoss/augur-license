@@ -3,7 +3,7 @@
 Dependencies
 ------------
 
-- Python 3.6 or later version
+- Python 3.7 or later version
 - PostgreSQL 8.x or later version (can be on a separate machine)
 - Installed instance of [Augur](https://github.com/chaoss/augur) that has had the `facade worker` run at least one time. Without this step there will be no cloned repos to scan. 
 - Necessary libraries for compilation of python source: 

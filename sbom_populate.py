@@ -75,7 +75,16 @@ def parse_json(doc_1, cre_1, pac_1, pac_lif_1, pac_2, fil_dat_1, fil_rel_1, bas_
 
     #with open('ex.json', 'w+') as example:
     #    json.dump(license_information, example)
-    cur.execute("insert into augur_data.repo_sbom_scans(repo_id, sbom_scan) VALUES(" + str(repo_id)  + "," +  chr(39) + str(json.dumps(license_information)).replace("'", "") + chr(39) + ");")
+    try: 
+        cur.execute("insert into augur_data.repo_sbom_scans(repo_id, sbom_scan) VALUES(" + str(repo_id)  + "," +  chr(39) + str(json.dumps(license_information)).replace("'", "") + chr(39) + ");")
+    except ProgramLimitExceeded as e: 
+        print(f'Program limit exceeded error: {e}')    
+    except Exception as e:
+        print(f'Unexpected Exception caught: {e}')
+    finally:
+        print(f'Finished! REPO:  {repo_id}')
+
+
 
 def grabreg(records, repo_id, dsfile, conf):
     print("DETAILS FOUND. CREATING DOCUMENT")

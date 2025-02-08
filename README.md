@@ -1,4 +1,4 @@
-# Augur-SPDX 
+# Augur-License 
 
 Dependencies
 ------------

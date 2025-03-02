@@ -1,0 +1,1291 @@
+IPATH EQUALS /mnt/data/repos/zephyr/
+HOME EQUALS /home/sean/
+IPATH EQUALS /mnt/data/repos/sean/
+HOME EQUALS /home/sean
+---------------------
+INITIAL SCANS RUNNING
+---------------------
+Scan Result
+********************
+('github.com/chaoss/', 1, 1, 'augur')
+****************
+1
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/1/github.com/chaoss/augur
+INSIDE: ['/mnt/data/repos/sean/1/github.com/chaoss/augur']
+---------------
+PATH: /mnt/data/repos/sean/1/github.com/chaoss/augur
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/1/github.com/chaoss/augur' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 1
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/1/github.com/chaoss/augur
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/1/github.com/chaoss/augur: package_id: 1\ndosocs2: running nomos on package 1\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5310>
+RECORD CREATED
+('github.com/spiffe/', 25495, 25430, 'spire-controller-manager')
+****************
+25495
+****************
+github.com/spiffe/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/spire-controller-manager
+INSIDE: ['/mnt/data/repos/sean/25430/github.com/spiffe/spire-controller-manager']
+---------------
+PATH: /mnt/data/repos/sean/25430/github.com/spiffe/spire-controller-manager
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25430/github.com/spiffe/spire-controller-manager' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25495
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25430/github.com/spiffe/spire-controller-manager
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25430/github.com/spiffe/spire-controller-manager: package_id: 2\ndosocs2: running nomos on package 2\n')
+####################
+<subprocess.Popen object at 0x7f6315fa56d0>
+RECORD CREATED
+('github.com/spiffe/', 25482, 25430, 'spire')
+****************
+25482
+****************
+github.com/spiffe/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/spire-plugin-sdk/proto/spire
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/spire
+INSIDE: ['/mnt/data/repos/sean/25430/github.com/spiffe/spire-plugin-sdk/proto/spire', '/mnt/data/repos/sean/25430/github.com/spiffe/spire']
+---------------
+PATH: /mnt/data/repos/sean/25430/github.com/spiffe/spire-plugin-sdk/proto/spire
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25430/github.com/spiffe/spire-plugin-sdk/proto/spire' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25482
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25430/github.com/spiffe/spire-plugin-sdk/proto/spire
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25430/github.com/spiffe/spire-plugin-sdk/proto/spire: package_id: 3\ndosocs2: running nomos on package 3\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5670>
+RECORD CREATED
+('github.com/spiffe/', 25494, 25430, 'awesome-spiffe')
+****************
+25494
+****************
+github.com/spiffe/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/awesome-spiffe
+INSIDE: ['/mnt/data/repos/sean/25430/github.com/spiffe/awesome-spiffe']
+---------------
+PATH: /mnt/data/repos/sean/25430/github.com/spiffe/awesome-spiffe
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25430/github.com/spiffe/awesome-spiffe' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25494
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25430/github.com/spiffe/awesome-spiffe
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25430/github.com/spiffe/awesome-spiffe: package_id: 4\ndosocs2: running nomos on package 4\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5730>
+RECORD CREATED
+('github.com/spiffe/', 25483, 25430, 'spiffe-helper')
+****************
+25483
+****************
+github.com/spiffe/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/spiffe-helper
+INSIDE: ['/mnt/data/repos/sean/25430/github.com/spiffe/spiffe-helper']
+---------------
+PATH: /mnt/data/repos/sean/25430/github.com/spiffe/spiffe-helper
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25430/github.com/spiffe/spiffe-helper' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25483
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25430/github.com/spiffe/spiffe-helper
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25430/github.com/spiffe/spiffe-helper: package_id: 5\ndosocs2: running nomos on package 5\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5310>
+RECORD CREATED
+('github.com/spiffe/', 25493, 25430, 'spiffe-csi')
+****************
+25493
+****************
+github.com/spiffe/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/spiffe-csi
+INSIDE: ['/mnt/data/repos/sean/25430/github.com/spiffe/spiffe-csi']
+---------------
+PATH: /mnt/data/repos/sean/25430/github.com/spiffe/spiffe-csi
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25430/github.com/spiffe/spiffe-csi' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25493
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25430/github.com/spiffe/spiffe-csi
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25430/github.com/spiffe/spiffe-csi: package_id: 6\ndosocs2: running nomos on package 6\n')
+####################
+<subprocess.Popen object at 0x7f6315fa56d0>
+RECORD CREATED
+('github.com/spiffe/', 25489, 25430, 'assets')
+****************
+25489
+****************
+github.com/spiffe/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/spiffe.io/assets
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/assets
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/community/community-resources/assets
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-tutorial/assets
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-sigils/docs/assets
+INSIDE: ['/mnt/data/repos/sean/25430/github.com/spiffe/spiffe.io/assets', '/mnt/data/repos/sean/25430/github.com/spiffe/assets', '/mnt/data/repos/sean/25431/github.com/chaoss/community/community-resources/assets', '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-tutorial/assets', '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-sigils/docs/assets']
+---------------
+PATH: /mnt/data/repos/sean/25430/github.com/spiffe/spiffe.io/assets
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25430/github.com/spiffe/spiffe.io/assets' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25489
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25430/github.com/spiffe/spiffe.io/assets
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25430/github.com/spiffe/spiffe.io/assets: package_id: 7\ndosocs2: running nomos on package 7\n')
+####################
+<subprocess.Popen object at 0x7f6315fa52e0>
+RECORD CREATED
+('github.com/spiffe/', 25480, 25430, 'go-spiffe')
+****************
+25480
+****************
+github.com/spiffe/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/go-spiffe
+INSIDE: ['/mnt/data/repos/sean/25430/github.com/spiffe/go-spiffe']
+---------------
+PATH: /mnt/data/repos/sean/25430/github.com/spiffe/go-spiffe
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25430/github.com/spiffe/go-spiffe' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25480
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25430/github.com/spiffe/go-spiffe
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25430/github.com/spiffe/go-spiffe: package_id: 8\ndosocs2: running nomos on package 8\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5730>
+RECORD CREATED
+('github.com/spiffe/', 25490, 25430, 'spire-api-sdk')
+****************
+25490
+****************
+github.com/spiffe/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/spire-api-sdk
+INSIDE: ['/mnt/data/repos/sean/25430/github.com/spiffe/spire-api-sdk']
+---------------
+PATH: /mnt/data/repos/sean/25430/github.com/spiffe/spire-api-sdk
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25430/github.com/spiffe/spire-api-sdk' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25490
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25430/github.com/spiffe/spire-api-sdk
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25430/github.com/spiffe/spire-api-sdk: package_id: 9\ndosocs2: running nomos on package 9\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5310>
+RECORD CREATED
+('github.com/spiffe/', 25485, 25430, 'spiffe.io')
+****************
+25485
+****************
+github.com/spiffe/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/spiffe.io
+INSIDE: ['/mnt/data/repos/sean/25430/github.com/spiffe/spiffe.io']
+---------------
+PATH: /mnt/data/repos/sean/25430/github.com/spiffe/spiffe.io
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25430/github.com/spiffe/spiffe.io' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25485
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25430/github.com/spiffe/spiffe.io
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25430/github.com/spiffe/spiffe.io: package_id: 10\ndosocs2: running nomos on package 10\n')
+####################
+<subprocess.Popen object at 0x7f6315fa56d0>
+RECORD CREATED
+('github.com/spiffe/', 25486, 25430, 'spire-tutorials')
+****************
+25486
+****************
+github.com/spiffe/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/spire-tutorials
+INSIDE: ['/mnt/data/repos/sean/25430/github.com/spiffe/spire-tutorials']
+---------------
+PATH: /mnt/data/repos/sean/25430/github.com/spiffe/spire-tutorials
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25430/github.com/spiffe/spire-tutorials' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25486
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25430/github.com/spiffe/spire-tutorials
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25430/github.com/spiffe/spire-tutorials: package_id: 11\ndosocs2: running nomos on package 11\n')
+####################
+<subprocess.Popen object at 0x7f6315fa52e0>
+RECORD CREATED
+('github.com/spiffe/', 25492, 25430, 'tornjak')
+****************
+25492
+****************
+github.com/spiffe/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/tornjak
+INSIDE: ['/mnt/data/repos/sean/25430/github.com/spiffe/tornjak']
+---------------
+PATH: /mnt/data/repos/sean/25430/github.com/spiffe/tornjak
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25430/github.com/spiffe/tornjak' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25492
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25430/github.com/spiffe/tornjak
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25430/github.com/spiffe/tornjak: package_id: 12\ndosocs2: running nomos on package 12\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5730>
+RECORD CREATED
+('github.com/spiffe/', 25481, 25430, 'spiffe')
+****************
+25481
+****************
+github.com/spiffe/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe
+INSIDE: ['/mnt/data/repos/sean/25430/github.com/spiffe']
+---------------
+PATH: /mnt/data/repos/sean/25430/github.com/spiffe
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25430/github.com/spiffe' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25481
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25430/github.com/spiffe
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25430/github.com/spiffe: package_id: 13\ndosocs2: running nomos on package 13\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5310>
+RECORD CREATED
+('github.com/spiffe/', 25484, 25430, 'java-spiffe')
+****************
+25484
+****************
+github.com/spiffe/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/java-spiffe
+INSIDE: ['/mnt/data/repos/sean/25430/github.com/spiffe/java-spiffe']
+---------------
+PATH: /mnt/data/repos/sean/25430/github.com/spiffe/java-spiffe
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25430/github.com/spiffe/java-spiffe' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25484
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25430/github.com/spiffe/java-spiffe
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25430/github.com/spiffe/java-spiffe: package_id: 14\ndosocs2: running nomos on package 14\n')
+####################
+<subprocess.Popen object at 0x7f6315fa56d0>
+RECORD CREATED
+('github.com/spiffe/', 25491, 25430, 'spire-plugin-sdk')
+****************
+25491
+****************
+github.com/spiffe/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/spire-plugin-sdk
+INSIDE: ['/mnt/data/repos/sean/25430/github.com/spiffe/spire-plugin-sdk']
+---------------
+PATH: /mnt/data/repos/sean/25430/github.com/spiffe/spire-plugin-sdk
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25430/github.com/spiffe/spire-plugin-sdk' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25491
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25430/github.com/spiffe/spire-plugin-sdk
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25430/github.com/spiffe/spire-plugin-sdk: package_id: 15\ndosocs2: running nomos on package 15\n')
+####################
+<subprocess.Popen object at 0x7f6315fa52e0>
+RECORD CREATED
+('github.com/spiffe/', 25487, 25430, 'spire-examples')
+****************
+25487
+****************
+github.com/spiffe/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/spire-examples
+INSIDE: ['/mnt/data/repos/sean/25430/github.com/spiffe/spire-examples']
+---------------
+PATH: /mnt/data/repos/sean/25430/github.com/spiffe/spire-examples
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25430/github.com/spiffe/spire-examples' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25487
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25430/github.com/spiffe/spire-examples
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25430/github.com/spiffe/spire-examples: package_id: 16\ndosocs2: running nomos on package 16\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5730>
+RECORD CREATED
+(None, 25488, 25430, None)
+****************
+25488
+****************
+None
+---------------
+INSIDE: []
+---------------
+NO DIRECTORY, SKIPPING
+('github.com/chaoss/', 25525, 25431, 'augur-license')
+****************
+25525
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/augur-license
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/augur-license']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/augur-license
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/augur-license' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25525
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/augur-license
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/augur-license: package_id: 17\ndosocs2: running nomos on package 17\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5760>
+RECORD CREATED
+('github.com/chaoss/', 25512, 25431, 'prospector')
+****************
+25512
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/prospector
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/prospector']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/prospector
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/prospector' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25512
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/prospector
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/prospector: package_id: 18\ndosocs2: running nomos on package 18\n')
+####################
+<subprocess.Popen object at 0x7f6315fa56a0>
+RECORD CREATED
+('github.com/chaoss/', 25517, 25431, 'wg-dei')
+****************
+25517
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/wg-dei
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/wg-dei']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/wg-dei
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/wg-dei' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25517
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/wg-dei
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/wg-dei: package_id: 19\ndosocs2: running nomos on package 19\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5310>
+RECORD CREATED
+('github.com/chaoss/', 25500, 25431, 'grimoirelab-kingarthur')
+****************
+25500
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-kingarthur
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-kingarthur
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-kingarthur', '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-kingarthur']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-kingarthur
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-kingarthur' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25500
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-kingarthur
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-kingarthur: package_id: 20\ndosocs2: running nomos on package 20\n')
+####################
+<subprocess.Popen object at 0x7f6315fa56d0>
+RECORD CREATED
+('github.com/chaoss/', 25518, 25431, 'website')
+****************
+25518
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/website
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/website']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/website
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/website' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25518
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/website
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/website: package_id: 21\ndosocs2: running nomos on package 21\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5970>
+RECORD CREATED
+('github.com/chaoss/', 25522, 25431, 'wg-value')
+****************
+25522
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/wg-value
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/wg-value']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/wg-value
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/wg-value' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25522
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/wg-value
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/wg-value: package_id: 22\ndosocs2: running nomos on package 22\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5730>
+RECORD CREATED
+('github.com/chaoss/', 25523, 25431, 'wg-risk')
+****************
+25523
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/wg-risk
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/wg-risk']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/wg-risk
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/wg-risk' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25523
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/wg-risk
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/wg-risk: package_id: 23\ndosocs2: running nomos on package 23\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5880>
+RECORD CREATED
+('github.com/chaoss/', 25524, 25431, 'wg-common')
+****************
+25524
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/wg-common
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/wg-common']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/wg-common
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/wg-common' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25524
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/wg-common
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/wg-common: package_id: 24\ndosocs2: running nomos on package 24\n')
+####################
+<subprocess.Popen object at 0x7f6315fa57c0>
+RECORD CREATED
+(None, 25507, 25431, None)
+****************
+25507
+****************
+None
+---------------
+INSIDE: []
+---------------
+NO DIRECTORY, SKIPPING
+(None, 25510, 25431, None)
+****************
+25510
+****************
+None
+---------------
+INSIDE: []
+---------------
+NO DIRECTORY, SKIPPING
+('github.com/chaoss/', 25503, 25431, 'grimoirelab-sirmordred')
+****************
+25503
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-sirmordred
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-sirmordred']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-sirmordred
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-sirmordred' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25503
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-sirmordred
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-sirmordred: package_id: 25\ndosocs2: running nomos on package 25\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5790>
+RECORD CREATED
+('github.com/chaoss/', 25513, 25431, 'metrics')
+****************
+25513
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/1/github.com/chaoss/augur/augur/metrics
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/spire-tutorials/docker-compose/metrics
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-manuscripts/manuscripts/metrics
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-manuscripts/manuscripts2/metrics
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/wg-value/metrics
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/metrics
+INSIDE: ['/mnt/data/repos/sean/1/github.com/chaoss/augur/augur/metrics', '/mnt/data/repos/sean/25430/github.com/spiffe/spire-tutorials/docker-compose/metrics', '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-manuscripts/manuscripts/metrics', '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-manuscripts/manuscripts2/metrics', '/mnt/data/repos/sean/25431/github.com/chaoss/wg-value/metrics', '/mnt/data/repos/sean/25431/github.com/chaoss/metrics']
+---------------
+PATH: /mnt/data/repos/sean/1/github.com/chaoss/augur/augur/metrics
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/1/github.com/chaoss/augur/augur/metrics' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25513
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/1/github.com/chaoss/augur/augur/metrics
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/1/github.com/chaoss/augur/augur/metrics: package_id: 26\ndosocs2: running nomos on package 26\n')
+####################
+<subprocess.Popen object at 0x7f6315fa52b0>
+RECORD CREATED
+('github.com/chaoss/', 25514, 25431, 'grimoirelab')
+****************
+25514
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25514
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab: package_id: 27\ndosocs2: running nomos on package 27\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5970>
+RECORD CREATED
+(None, 25508, 25431, None)
+****************
+25508
+****************
+None
+---------------
+INSIDE: []
+---------------
+NO DIRECTORY, SKIPPING
+(None, 25509, 25431, None)
+****************
+25509
+****************
+None
+---------------
+INSIDE: []
+---------------
+NO DIRECTORY, SKIPPING
+(None, 25511, 25431, None)
+****************
+25511
+****************
+None
+---------------
+INSIDE: []
+---------------
+NO DIRECTORY, SKIPPING
+('github.com/chaoss/', 25497, 25431, 'grimoirelab-elk')
+****************
+25497
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-elk
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-elk
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-elk', '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-elk']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-elk
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-elk' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25497
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-elk
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-elk: package_id: 20\ndosocs2: nomos already ran on package 20\n')
+####################
+<subprocess.Popen object at 0x7f6315fa57c0>
+RECORD CREATED
+('github.com/chaoss/', 25502, 25431, 'grimoirelab-sigils')
+****************
+25502
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-sigils
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-sigils
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-sigils', '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-sigils']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-sigils
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-sigils' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25502
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-sigils
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-sigils: package_id: 20\ndosocs2: nomos already ran on package 20\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5910>
+RECORD CREATED
+('github.com/chaoss/', 25504, 25431, 'grimoirelab-tutorial')
+****************
+25504
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-tutorial
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-tutorial']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-tutorial
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-tutorial' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25504
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-tutorial
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-tutorial: package_id: 28\ndosocs2: running nomos on package 28\n')
+####################
+<subprocess.Popen object at 0x7f6315fa57f0>
+RECORD CREATED
+('github.com/chaoss/', 25521, 25431, 'grimoirelab-graal')
+****************
+25521
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-graal
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-graal
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-graal', '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-graal']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-graal
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-graal' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25521
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-graal
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-graal: package_id: 20\ndosocs2: nomos already ran on package 20\n')
+####################
+<subprocess.Popen object at 0x7f6315fa53d0>
+RECORD CREATED
+('github.com/chaoss/', 25501, 25431, 'grimoirelab-cereslib')
+****************
+25501
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-cereslib
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-cereslib
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-cereslib', '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-cereslib']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-cereslib
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-cereslib' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25501
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-cereslib
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-cereslib: package_id: 20\ndosocs2: nomos already ran on package 20\n')
+####################
+<subprocess.Popen object at 0x7f6315fa57c0>
+RECORD CREATED
+('github.com/chaoss/', 25499, 25431, 'grimoirelab-kibiter')
+****************
+25499
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-kibiter
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-kibiter']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-kibiter
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-kibiter' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25499
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-kibiter
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-kibiter: package_id: 29\ndosocs2: running nomos on package 29\n')
+####################
+<subprocess.Popen object at 0x7f6315fa56d0>
+RECORD CREATED
+('github.com/chaoss/', 25496, 25431, 'grimoirelab-sortinghat')
+****************
+25496
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-sortinghat
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-sortinghat']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-sortinghat
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-sortinghat' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25496
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-sortinghat
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-sortinghat: package_id: 30\ndosocs2: running nomos on package 30\n')
+####################
+<subprocess.Popen object at 0x7f6315fa57f0>
+RECORD CREATED
+('github.com/chaoss/', 25498, 25431, 'grimoirelab-perceval')
+****************
+25498
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-perceval
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-perceval
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-perceval', '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-perceval']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-perceval
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-perceval' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25498
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-perceval
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-perceval: package_id: 20\ndosocs2: nomos already ran on package 20\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5730>
+RECORD CREATED
+('github.com/chaoss/', 25515, 25431, 'community')
+****************
+25515
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/spiffe.io/layouts/community
+FOLDER FOUND: /mnt/data/repos/sean/25430/github.com/spiffe/spiffe/community
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/community
+INSIDE: ['/mnt/data/repos/sean/25430/github.com/spiffe/spiffe.io/layouts/community', '/mnt/data/repos/sean/25430/github.com/spiffe/spiffe/community', '/mnt/data/repos/sean/25431/github.com/chaoss/community']
+---------------
+PATH: /mnt/data/repos/sean/25430/github.com/spiffe/spiffe.io/layouts/community
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25430/github.com/spiffe/spiffe.io/layouts/community' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25515
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25430/github.com/spiffe/spiffe.io/layouts/community
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25430/github.com/spiffe/spiffe.io/layouts/community: package_id: 31\ndosocs2: running nomos on package 31\n')
+####################
+<subprocess.Popen object at 0x7f6315fa59a0>
+RECORD CREATED
+('github.com/chaoss/', 25520, 25431, 'wg-evolution')
+****************
+25520
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/wg-evolution
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/wg-evolution']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/wg-evolution
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/wg-evolution' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25520
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/wg-evolution
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/wg-evolution: package_id: 32\ndosocs2: running nomos on package 32\n')
+####################
+<subprocess.Popen object at 0x7f6315fa5670>
+RECORD CREATED
+('github.com/chaoss/', 25516, 25431, 'grimoirelab-hatstall')
+****************
+25516
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-hatstall
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-hatstall']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-hatstall
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-hatstall' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25516
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-hatstall
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-hatstall: package_id: 33\ndosocs2: running nomos on package 33\n')
+####################
+<subprocess.Popen object at 0x7f6315fa57c0>
+RECORD CREATED
+(None, 25519, 25431, None)
+****************
+25519
+****************
+None
+---------------
+INSIDE: []
+---------------
+NO DIRECTORY, SKIPPING
+('github.com/chaoss/', 25505, 25431, 'grimoirelab-perceval-mozilla')
+****************
+25505
+****************
+github.com/chaoss/
+---------------
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-perceval-mozilla
+FOLDER FOUND: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-perceval-mozilla
+INSIDE: ['/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-perceval-mozilla', '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab-perceval-mozilla']
+---------------
+PATH: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-perceval-mozilla
+SELECT repo_path FROM spdx.augur_repo_map WHERE '/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-perceval-mozilla' = repo_path;
+ALL CHECKS PASSED
+Creating Record for 25505
+CREATING NEW DOSOCS DOCUMENT
+/mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-perceval-mozilla
+(b'sqlite\n', b'dosocs2: /mnt/data/repos/sean/25431/github.com/chaoss/grimoirelab/src/grimoirelab-perceval-mozilla: package_id: 20\ndosocs2: nomos already ran on package 20\n')
+####################
+<subprocess.Popen object at 0x7f6315fa56d0>
+RECORD CREATED
+None
+------------------
+SBOM SCANS RUNNING
+------------------
+********************
+('github.com/chaoss/', 1, 1, 'augur')
+****************
+1
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(1,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 1
+COVERAGE: [('TotalFiles', '8536', 'DeclaredLicenseFiles', '4125', 'PercentTotalLicenseCoverage', '48.32%')]
+Finished! REPO:  1
+('github.com/spiffe/', 25495, 25430, 'spire-controller-manager')
+****************
+25495
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(2,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 2
+COVERAGE: [('TotalFiles', '2090', 'DeclaredLicenseFiles', '385', 'PercentTotalLicenseCoverage', '18.42%')]
+Finished! REPO:  25495
+('github.com/spiffe/', 25482, 25430, 'spire')
+****************
+25482
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(3,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 3
+COVERAGE: [('TotalFiles', '638', 'DeclaredLicenseFiles', '0', 'PercentTotalLicenseCoverage', '0.00%')]
+Finished! REPO:  25482
+('github.com/spiffe/', 25494, 25430, 'awesome-spiffe')
+****************
+25494
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(4,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 4
+COVERAGE: [('TotalFiles', '561', 'DeclaredLicenseFiles', '11', 'PercentTotalLicenseCoverage', '1.96%')]
+Finished! REPO:  25494
+('github.com/spiffe/', 25483, 25430, 'spiffe-helper')
+****************
+25483
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(5,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 5
+COVERAGE: [('TotalFiles', '693', 'DeclaredLicenseFiles', '22', 'PercentTotalLicenseCoverage', '3.17%')]
+Finished! REPO:  25483
+('github.com/spiffe/', 25493, 25430, 'spiffe-csi')
+****************
+25493
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(6,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 6
+COVERAGE: [('TotalFiles', '902', 'DeclaredLicenseFiles', '11', 'PercentTotalLicenseCoverage', '1.22%')]
+Finished! REPO:  25493
+('github.com/spiffe/', 25489, 25430, 'assets')
+****************
+25489
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(7,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 7
+COVERAGE: [('TotalFiles', '110', 'DeclaredLicenseFiles', '33', 'PercentTotalLicenseCoverage', '30.00%')]
+Finished! REPO:  25489
+('github.com/spiffe/', 25480, 25430, 'go-spiffe')
+****************
+25480
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(8,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 8
+COVERAGE: [('TotalFiles', '2167', 'DeclaredLicenseFiles', '11', 'PercentTotalLicenseCoverage', '0.51%')]
+Finished! REPO:  25480
+('github.com/spiffe/', 25490, 25430, 'spire-api-sdk')
+****************
+25490
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(9,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 9
+COVERAGE: [('TotalFiles', '946', 'DeclaredLicenseFiles', '11', 'PercentTotalLicenseCoverage', '1.16%')]
+Finished! REPO:  25490
+('github.com/spiffe/', 25485, 25430, 'spiffe.io')
+****************
+25485
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(10,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 10
+COVERAGE: [('TotalFiles', '2464', 'DeclaredLicenseFiles', '55', 'PercentTotalLicenseCoverage', '2.23%')]
+Finished! REPO:  25485
+('github.com/spiffe/', 25486, 25430, 'spire-tutorials')
+****************
+25486
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(11,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 11
+COVERAGE: [('TotalFiles', '2343', 'DeclaredLicenseFiles', '11', 'PercentTotalLicenseCoverage', '0.47%')]
+Finished! REPO:  25486
+('github.com/spiffe/', 25492, 25430, 'tornjak')
+****************
+25492
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(12,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 12
+COVERAGE: [('TotalFiles', '1947', 'DeclaredLicenseFiles', '44', 'PercentTotalLicenseCoverage', '2.26%')]
+Finished! REPO:  25492
+('github.com/spiffe/', 25481, 25430, 'spiffe')
+****************
+25481
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(13,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 13
+COVERAGE: [('TotalFiles', '38995', 'DeclaredLicenseFiles', '1023', 'PercentTotalLicenseCoverage', '2.62%')]
+Finished! REPO:  25481
+('github.com/spiffe/', 25484, 25430, 'java-spiffe')
+****************
+25484
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(14,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 14
+COVERAGE: [('TotalFiles', '2662', 'DeclaredLicenseFiles', '22', 'PercentTotalLicenseCoverage', '0.83%')]
+Finished! REPO:  25484
+('github.com/spiffe/', 25491, 25430, 'spire-plugin-sdk')
+****************
+25491
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(15,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 15
+COVERAGE: [('TotalFiles', '1584', 'DeclaredLicenseFiles', '11', 'PercentTotalLicenseCoverage', '0.69%')]
+Finished! REPO:  25491
+('github.com/spiffe/', 25487, 25430, 'spire-examples')
+****************
+25487
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(16,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 16
+COVERAGE: [('TotalFiles', '1771', 'DeclaredLicenseFiles', '11', 'PercentTotalLicenseCoverage', '0.62%')]
+Finished! REPO:  25487
+(None, 25488, 25430, None)
+****************
+25488
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+NO DATA IN DOCUMENT
+REPO DOES NOT HAVE ENOUGH DATA
+ERROR: RECORD DOES NOT EXIST IN MAPPING TABLE
+('github.com/chaoss/', 25525, 25431, 'augur-license')
+****************
+25525
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(17,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 17
+COVERAGE: [('TotalFiles', '1397', 'DeclaredLicenseFiles', '440', 'PercentTotalLicenseCoverage', '31.50%')]
+Finished! REPO:  25525
+('github.com/chaoss/', 25512, 25431, 'prospector')
+****************
+25512
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(18,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 18
+COVERAGE: [('TotalFiles', '3575', 'DeclaredLicenseFiles', '1870', 'PercentTotalLicenseCoverage', '52.31%')]
+Finished! REPO:  25512
+('github.com/chaoss/', 25517, 25431, 'wg-dei')
+****************
+25517
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(19,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 19
+COVERAGE: [('TotalFiles', '957', 'DeclaredLicenseFiles', '66', 'PercentTotalLicenseCoverage', '6.90%')]
+Finished! REPO:  25517
+('github.com/chaoss/', 25500, 25431, 'grimoirelab-kingarthur')
+****************
+25500
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(20,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 20
+COVERAGE: []
+Finished! REPO:  25500
+('github.com/chaoss/', 25518, 25431, 'website')
+****************
+25518
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(21,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 21
+COVERAGE: [('TotalFiles', '5412', 'DeclaredLicenseFiles', '308', 'PercentTotalLicenseCoverage', '5.69%')]
+Finished! REPO:  25518
+('github.com/chaoss/', 25522, 25431, 'wg-value')
+****************
+25522
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(22,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 22
+COVERAGE: [('TotalFiles', '803', 'DeclaredLicenseFiles', '33', 'PercentTotalLicenseCoverage', '4.11%')]
+Finished! REPO:  25522
+('github.com/chaoss/', 25523, 25431, 'wg-risk')
+****************
+25523
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(23,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 23
+COVERAGE: [('TotalFiles', '946', 'DeclaredLicenseFiles', '55', 'PercentTotalLicenseCoverage', '5.81%')]
+Finished! REPO:  25523
+('github.com/chaoss/', 25524, 25431, 'wg-common')
+****************
+25524
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(24,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 24
+COVERAGE: [('TotalFiles', '957', 'DeclaredLicenseFiles', '33', 'PercentTotalLicenseCoverage', '3.45%')]
+Finished! REPO:  25524
+(None, 25507, 25431, None)
+****************
+25507
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+NO DATA IN DOCUMENT
+REPO DOES NOT HAVE ENOUGH DATA
+ERROR: RECORD DOES NOT EXIST IN MAPPING TABLE
+(None, 25510, 25431, None)
+****************
+25510
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+NO DATA IN DOCUMENT
+REPO DOES NOT HAVE ENOUGH DATA
+ERROR: RECORD DOES NOT EXIST IN MAPPING TABLE
+('github.com/chaoss/', 25503, 25431, 'grimoirelab-sirmordred')
+****************
+25503
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(25,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 25
+COVERAGE: [('TotalFiles', '1694', 'DeclaredLicenseFiles', '484', 'PercentTotalLicenseCoverage', '28.57%')]
+Finished! REPO:  25503
+('github.com/chaoss/', 25513, 25431, 'metrics')
+****************
+25513
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(26,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 26
+COVERAGE: [('TotalFiles', '143', 'DeclaredLicenseFiles', '132', 'PercentTotalLicenseCoverage', '92.31%')]
+Finished! REPO:  25513
+('github.com/chaoss/', 25514, 25431, 'grimoirelab')
+****************
+25514
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(27,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 27
+COVERAGE: [('TotalFiles', '4774', 'DeclaredLicenseFiles', '220', 'PercentTotalLicenseCoverage', '4.61%')]
+Finished! REPO:  25514
+(None, 25508, 25431, None)
+****************
+25508
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+NO DATA IN DOCUMENT
+REPO DOES NOT HAVE ENOUGH DATA
+ERROR: RECORD DOES NOT EXIST IN MAPPING TABLE
+(None, 25509, 25431, None)
+****************
+25509
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+NO DATA IN DOCUMENT
+REPO DOES NOT HAVE ENOUGH DATA
+ERROR: RECORD DOES NOT EXIST IN MAPPING TABLE
+(None, 25511, 25431, None)
+****************
+25511
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+NO DATA IN DOCUMENT
+REPO DOES NOT HAVE ENOUGH DATA
+ERROR: RECORD DOES NOT EXIST IN MAPPING TABLE
+('github.com/chaoss/', 25497, 25431, 'grimoirelab-elk')
+****************
+25497
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(None,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+REPO DOES NOT HAVE ENOUGH DATA
+ERROR: RECORD DOES NOT EXIST IN MAPPING TABLE
+('github.com/chaoss/', 25502, 25431, 'grimoirelab-sigils')
+****************
+25502
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(None,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+REPO DOES NOT HAVE ENOUGH DATA
+ERROR: RECORD DOES NOT EXIST IN MAPPING TABLE
+('github.com/chaoss/', 25504, 25431, 'grimoirelab-tutorial')
+****************
+25504
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(28,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 28
+COVERAGE: [('TotalFiles', '3652', 'DeclaredLicenseFiles', '242', 'PercentTotalLicenseCoverage', '6.63%')]
+Finished! REPO:  25504
+('github.com/chaoss/', 25521, 25431, 'grimoirelab-graal')
+****************
+25521
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(None,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+REPO DOES NOT HAVE ENOUGH DATA
+ERROR: RECORD DOES NOT EXIST IN MAPPING TABLE
+('github.com/chaoss/', 25501, 25431, 'grimoirelab-cereslib')
+****************
+25501
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(None,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+REPO DOES NOT HAVE ENOUGH DATA
+ERROR: RECORD DOES NOT EXIST IN MAPPING TABLE
+('github.com/chaoss/', 25499, 25431, 'grimoirelab-kibiter')
+****************
+25499
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(29,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 29
+COVERAGE: [('TotalFiles', '156607', 'DeclaredLicenseFiles', '115192', 'PercentTotalLicenseCoverage', '73.55%')]
+Finished! REPO:  25499
+('github.com/chaoss/', 25496, 25431, 'grimoirelab-sortinghat')
+****************
+25496
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(30,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 30
+COVERAGE: [('TotalFiles', '2596', 'DeclaredLicenseFiles', '1067', 'PercentTotalLicenseCoverage', '41.10%')]
+Finished! REPO:  25496
+('github.com/chaoss/', 25498, 25431, 'grimoirelab-perceval')
+****************
+25498
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(None,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+REPO DOES NOT HAVE ENOUGH DATA
+ERROR: RECORD DOES NOT EXIST IN MAPPING TABLE
+('github.com/chaoss/', 25515, 25431, 'community')
+****************
+25515
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(31,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 31
+COVERAGE: [('TotalFiles', '11', 'DeclaredLicenseFiles', '0', 'PercentTotalLicenseCoverage', '0.00%')]
+Finished! REPO:  25515
+('github.com/chaoss/', 25520, 25431, 'wg-evolution')
+****************
+25520
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(32,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 32
+COVERAGE: [('TotalFiles', '902', 'DeclaredLicenseFiles', '22', 'PercentTotalLicenseCoverage', '2.44%')]
+Finished! REPO:  25520
+('github.com/chaoss/', 25516, 25431, 'grimoirelab-hatstall')
+****************
+25516
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(33,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+Document_id: 33
+COVERAGE: [('TotalFiles', '1232', 'DeclaredLicenseFiles', '88', 'PercentTotalLicenseCoverage', '7.14%')]
+Finished! REPO:  25516
+(None, 25519, 25431, None)
+****************
+25519
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+NO DATA IN DOCUMENT
+REPO DOES NOT HAVE ENOUGH DATA
+ERROR: RECORD DOES NOT EXIST IN MAPPING TABLE
+('github.com/chaoss/', 25505, 25431, 'grimoirelab-perceval-mozilla')
+****************
+25505
+****************
+DETAILS FOUND. CREATING DOCUMENT
+[(None,)]
+CONF: /home/sean/github/augur-license/dosocs2.conf
+REPO DOES NOT HAVE ENOUGH DATA
+ERROR: RECORD DOES NOT EXIST IN MAPPING TABLE
